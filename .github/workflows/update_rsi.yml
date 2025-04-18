@@ -22,11 +22,13 @@ jobs:
     - name: Install dependencies
       run: |
         pip install setuptools
-        pip install yfinance pandas pandas_ta beautifulsoup4 requests
+        pip install numpy==1.23.0  # Ensure compatibility with pandas_ta
+        pip install yfinance pandas pandas_ta==0.3.14 beautifulsoup4 requests
 
     - name: Run RSI calculation script
       run: |
         python rsi_script.py
+
 
 
 
