@@ -24,9 +24,10 @@ jobs:
       - name: Install dependencies
         run: |
           pip install setuptools
+          pip install numpy==1.23.0  # Force a specific version of numpy
           pip install yfinance pandas pandas_ta
 
-      # Step 4: Run the RSI script
+      # Step 4: Run RSI script
       - name: Run RSI script
         run: python rsi_script.py
 
@@ -38,5 +39,6 @@ jobs:
           git add -A  # Stage all changes, including new files
           git commit -m "Update RSI data" || echo "No changes to commit"
           git push
+
 
 
