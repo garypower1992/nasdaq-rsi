@@ -21,11 +21,13 @@ jobs:
 
     - name: Install dependencies
       run: |
+        pip install setuptools
         pip install yfinance pandas pandas_ta beautifulsoup4 requests
 
     - name: Run RSI calculation script
       run: |
         python rsi_script.py
+
 
 
 
