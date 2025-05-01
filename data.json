@@ -1,1 +1,17 @@
+[
+  {
+    "Ticker": "PEP",
+    "RSI": 29.4,
+    "PE": 25.4,
+    "Market_Cap": 184000000000,
+    "Company": "PepsiCo"
+  },
+  {
+    "Ticker": "META",
+    "RSI": 42.0,
+    "PE": 28.7,
+    "Market_Cap": 1300000000000,
+    "Company": "Meta Platforms"
+  }
+]
 
